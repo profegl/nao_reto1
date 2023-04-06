@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.first, ul, .imagenes{
+    display: flex;
+
+}
+
+li{
+    list-style: none;
+    margin-left: 10px;
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.flow{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 100px;
+}
+
+.imagenes{
+    margin-top: 10%;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+.card{
+    width: 310px;
+}
+
+.formulario{
+    text-align: center;
+    height: 300px;
+    font-size: 15px;
+    margin: 0 auto;
+    
+}
+
+footer{
+    text-align: center;
+}
