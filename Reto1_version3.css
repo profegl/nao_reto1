@@ -1,0 +1,67 @@
+:root {
+    --main-bg-color: brown;
+    --one : #80558C;
+    --two: #AF7AB3;
+    --three: #CBA0AE;
+    --four: #E4D192;
+
+
+  }
+
+  
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('font/Gilroy-Light.otf');
+}
+
+
+body{
+    font-family: 'Gilroy-Light';
+
+}
+
+.logo{
+    border-radius: 50%;
+}
+
+.navbar, .navbar-brand{
+    background: var(--one);
+    color: #E4D192;
+}
+
+.navbar-brand{
+    margin-left: 2%;
+}
+section.cta {
+    position: relative;
+    padding: 15rem 0;
+    background-image: url(imagenes/banner.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.principal{
+    color: var(--one);
+}
+
+
+
+.px-5{
+    margin-top: 10%;
+}
+
+.segundo{
+    color: #FFFFFF;
+}
+
+.conoceme{
+    
+    height: 70vh;
+    color: var(--one);
+}
+
+
+.fin{
+    color: var(--one);
+}
