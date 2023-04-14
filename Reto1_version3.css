@@ -1,3 +1,4 @@
+
 :root {
     --main-bg-color: brown;
     --one : #80558C;
@@ -59,9 +60,28 @@ section.cta {
     
     height: 70vh;
     color: var(--one);
+    
 }
 
+#conoceme{
+    padding-bottom: 5%;
+}
 
 .fin{
     color: var(--one);
+}
+
+#features{
+    background-color: var(--three);
+    padding-bottom: 5%;
+    color: #FFFFFF;
+}
+
+.icono{
+    font-size: 35px;
+}
+
+#tesumas{
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
