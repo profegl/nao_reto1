@@ -30,16 +30,19 @@
                   <li class="nav-item">
                     <a class="nav-link segundo " aria-current="page" href="#tesumas">¿Te sumas?</a>
                   </li>
-                
                 </ul>
-                
+                <div class="redes">
+                  <p><a href="http://instagram.com" class="nav-link  menu-redes"><i class="fa-brands fa-instagram"></i></a></p>
+                  <p><a href="http://tiktok.com" class="nav-link menu-redes"><i class="fa-brands fa-tiktok"></i></a></p>
+                  <p><a href="http://twitter.com" class="nav-link menu-redes"><i class="fa-brands fa-twitter"></i></a></p>
+                </div>
               </div>
             </div>
           </nav>
     </header>
 
     <main>
-      <section class="cta">
+      <section class="cta" id="inicio">
         <div class="cta-content">
             <div class="container px-5">
                 <h2 class="principal display-1 lh-1 mb-4">
@@ -47,7 +50,7 @@
                     <br />
                     Ganá clientes
                 </h2>
-                <a class="btn btn-outline-light principal py-3 px-4 rounded-pill" href="#contactForm">Aprendé hoy</a>
+                <a class="btn btn-outline-light principal py-3 px-4 rounded-pill" href="#tesumas">Aprendé hoy</a>
             </div>
         </div>
     </section>
@@ -87,7 +90,7 @@
                       <div class="col-md-6 mb-5">
                           
                           <div class="text-center">
-                            <i class="fa-solid fa-thumbs-up icono" style="color: #531f93;"></i>
+                            <i class="fa-solid fa-thumbs-up icono" style="color:#771eb3;"></i>
                               <h3 class="font-alt">Mejorá tus redes</h3>
                               <p class="text-muted mb-0">Crea una comunidad fiel alrededor de tu marca</p>
                           </div>
@@ -95,7 +98,7 @@
                       <div class="col-md-6 mb-5">
                           
                           <div class="text-center">
-                            <i class="fa-solid fa-hourglass-end icono" style="color: #5e28c3;"></i>
+                            <i class="fa-solid fa-hourglass-end icono" style="color: #771eb3;"></i>
                               <h3 class="font-alt">Gestioná tus tiempos</h3>
                               <p class="text-muted mb-0">Las buenas estrategias de gestión del tiempo te ayudarán a organizar y priorizar tus tareas</p>
                           </div>
@@ -113,7 +116,7 @@
                       <div class="col-md-6">
                           
                           <div class="text-center">
-                            <i class="fa-solid fa-business-time icono" style="color: #7b1aa8;"></i>
+                            <i class="fa-solid fa-business-time icono" style="color: #771eb3;"></i>
                               <h3 class="font-alt">Emprendé con confianza</h3>
                               <p class="text-muted mb-0">Aumenta tus probabilidades de tener éxito</p>
                           </div>
@@ -139,36 +142,34 @@
 </section>
 <section>
   <div class="container px-5 my-5" id="tesumas">
-    <form id="contactForm formulario" >
-      <h2>Siempre podemos aprender más, hoy te ofrezco mis conocimientos, ¿Estás preparado?</h2>
-        <div class="form-floating mb-3">
-            <input class="form-control" id="email" type="email" placeholder="Email " data-sb-validations="required,email" />
-            <label for="email">Email </label>
-            <div class="invalid-feedback" data-sb-feedback="email:required">Email is required.</div>
-            <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
+    <form>
+        <h2>Siempre podemos aprender más, hoy te ofrezco mis conocimientos, ¿Estás preparado?</h2>
+        <p>Sumate y pronto te enviaré más información</p>
+
+        <div class="mb-3">
+          <label for="nombre">Nombre</label>
+          <input class="form-control" id="nombre" type="text" placeholder="" data-sb-validations="required" />
+              
         </div>
-        <div class="form-floating mb-3">
-            <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
-            <label for="nombre">Nombre</label>
-            <div class="invalid-feedback" data-sb-feedback="nombre:required">Nombre is required.</div>
-        </div>
-        <div class="form-floating mb-3">
-            <select class="form-select" id="queTemaEsMasDeTuInteres" aria-label="Qué tema es más de tu interés?">
-                <option value="Tips Redees Sociales">Tips Redees Sociales</option>
-                <option value="Master en Tiktok">Master en Tiktok</option>
-                <option value="Finanzas de emprendimientos">Finanzas de emprendimientos</option>
-            </select>
-            <label for="queTemaEsMasDeTuInteres">Qué tema es más de tu interés?</label>
+        <div class="mb-3">
+
+          <label for="exampleInputEmail1" class="form-label">Email </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos tu mail con nadie más</div>
         </div>
         
-        <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
+        <div class="mb-3">
+          <label for="selection" class="form-label">¿Cúal es tu tema de interés?</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona aquí</option>
+                <option value="1">Redes Sociales</option>
+                <option value="2">Master en Tiktok</option>
+                <option value="3">Finanzas en emprendimientos</option>
+            </select>
         </div>
-        <div class="d-grid">
-            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-        </div>
+        <button type="submit" class="btn btn-primary send">Enviar</button>
     </form>
-</div>
+  </div>
 </section>
 
 <div class="container">
@@ -176,14 +177,17 @@
     <img src="imagenes/logo.jpg" class="logo"  alt="..." style="height: 3rem" />
     <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Caroline Sada</p>
 
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-    </a>
+    <div class="redes">
+      <p><a href="http://instagram.com" class="nav-link  text-body-secondary"><i class="fa-brands fa-instagram" style="color: #7a149f;"></i></a></p>
+      <p><a href="http://tiktok.com" class="nav-link  text-body-secondary"><i class="fa-brands fa-tiktok" style="color: #7a149f;"></i></a></p>
+      <p><a href="http://twitter.com" class="nav-link  text-body-secondary"><i class="fa-brands fa-twitter" style="color:  #7a149f;"></i></a></p>
+    </div>
 
     <ul class="nav col-md-3 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      
+      <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a href="#conoceme" class="nav-link px-2 text-body-secondary">Conoceme</a></li>
+      <li class="nav-item"><a href="#features" class="nav-link px-2 text-body-secondary">Cursos</a></li>
       
     </ul>
   </footer>

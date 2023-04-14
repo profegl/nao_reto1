@@ -33,6 +33,11 @@ body{
 .navbar-brand{
     margin-left: 2%;
 }
+
+.menu-redes{
+    color: #FFFFFF;
+}
+
 section.cta {
     position: relative;
     padding: 15rem 0;
@@ -84,4 +89,22 @@ section.cta {
 #tesumas{
     padding-bottom: 5%;
     padding-top: 5%;
+}
+
+.redes{
+    /*margin-left: -10%;*/
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.send{
+    background-color: var(--one);
+    border: 2px solid var(--one);
+}
+
+.send:hover{
+    background-color: var(--two);
+    border: 2px solid var(--two);
 }
